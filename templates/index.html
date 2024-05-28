@@ -25,8 +25,8 @@
             </div>-->
         </div>
         <div class="chat-area">
-            <!--<div class="chat-history">
-            </div>-->
+            <div class="chat-history">
+            </div>
             <form action="/get_response" method = "post" accept-charset="UTF-8" id="chat-form">
                 <input type="text" class="user-input" placeholder="Ask a question..." name="user_input">
                 <button type="button" id = "startBtn"><i class="fa-solid fa-microphone"></i></button>
@@ -117,7 +117,7 @@
         document.addEventListener("DOMContentLoaded", function() {
             const chatForm = document.getElementById("chat-form");
             const userInput = document.querySelector(".user-input");
-            //const chatHistory = document.querySelector(".chat-history");
+            const chatHistory = document.querySelector(".chat-history");
             const sendButton = document.querySelector(".send-button");
             const submitButton=document.querySelector(".submit-button");
             //const similar=document.querySelector(".similar");
