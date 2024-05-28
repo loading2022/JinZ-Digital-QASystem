@@ -49,8 +49,7 @@ def get_response():
         
         docs = new_db.similarity_search(user_input)
         llm = ChatOpenAI(
-            #model_name="gpt-4o",
-            model_name="gpt-4-1106-preview",
+            model_name="gpt-4o",
             temperature=0.2
         )
 
